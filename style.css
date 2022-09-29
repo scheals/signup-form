@@ -4,10 +4,12 @@
 }
 
 @font-face {
-    font-family: "norse-bold";
-    src: url("assets/fonts/Norse-Bold.otf") format("otf");
-    font-weight: bold;
+    font-family: 'norsebold';
+    src: url('./assets/fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+
 }
 
 body {
@@ -22,21 +24,15 @@ main {
 .form-container {
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 5;
 }
 
 .background-image {
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-.logo {
-    text-align: center;
-    align-self: center;
-    flex: 1;
-    display: flex;
-    padding-top: 20rem;
+    flex: 2;
+    background: url("./assets/images/christopher-le-unsplash-raccoon.jpg");
+    background-size: cover;
 }
 
 .background-image > footer {
@@ -44,10 +40,44 @@ main {
     flex: 0;
 }
 
-.logo > img {
-    width: 5rem;
-    height: 10rem;
+.logo-container {
+    align-items: center;
+    flex: 1;
+    display: flex;
+    margin-bottom: 40%;
 }
+
+.logo > img {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1rem;
+}
+
+.logo > p {
+    font-family: 'norsebold', sans-serif;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.logo {
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+footer > p > a {
+    color: white;
+}
+
 .description {
     padding: 10% 10% 5% 5%;
     flex: 1;
@@ -92,6 +122,3 @@ button:hover {
 .button-container > p {
     padding-top: 2%;
 }
-/* .background-image {
-    background-image: url("./assets/images/christopher-le-unsplash-raccoon.jpg");
-} */
