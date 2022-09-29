@@ -49,22 +49,48 @@ main {
     height: 10rem;
 }
 .description {
-    padding: 20% 10% 5% 5%;
+    padding: 10% 10% 5% 5%;
+    flex: 1;
 }
 
 .form {
-    padding: 5%;
+    padding: 3% 0 3% 5%;
+    flex: 1;
+
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 input {
     width: 16rem;
+}
+
+.button-container {
+    padding: 3% 0 0 5%;
+    flex: 1;
+}
+
+button {
+    padding: 0.5rem 3rem;
+    border-radius: 8px;
+    background-color: #596D48;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 3px 3px black;
+}
+
+button:hover {
+    border: solid #fff 2px;
+}
+
+.button-container > p {
+    padding-top: 2%;
 }
 /* .background-image {
     background-image: url("./assets/images/christopher-le-unsplash-raccoon.jpg");
