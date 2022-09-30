@@ -179,10 +179,15 @@ button {
     font-weight: bold;
     border: none;
     box-shadow: 2px 3px 3px black;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #6d8757;
+}
+
+button:focus {
+    padding: 0.4rem 2.9rem;
 }
 
 .button-container > p {
