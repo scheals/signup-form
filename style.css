@@ -148,7 +148,20 @@ form > :nth-child(2) {
 }
 
 input {
-    width: 16rem;
+    width: 18rem;
+    height: 2rem;
+    padding-left: 0.7rem;
+    border: solid 0.1rem rgb(213, 221, 232);
+    border-radius: 0.5rem;
+}
+
+input:hover {
+    background: rgba(89, 109, 72, 0.2);
+}
+
+input:focus-visible {
+    outline: solid 0.2rem #596D48;
+    box-shadow: 3px 3px 3px rgb(113, 130, 128);
 }
 
 .button-container {
