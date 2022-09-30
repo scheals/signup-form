@@ -12,8 +12,28 @@
 
 }
 
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
 body {
     height: 100vh;
+    font-family: 'roboto', Helvetica, sans-serif;
 }
 
 main {
@@ -54,7 +74,7 @@ main {
 }
 
 .logo > p {
-    font-family: 'norsebold', sans-serif;
+    font-family: 'norsebold', Helvetica, sans-serif;
     color: white;
     font-size: 4rem;
     font-weight: bold;
@@ -79,20 +99,36 @@ footer > p > a {
 }
 
 .description {
-    padding: 10% 10% 5% 5%;
+    padding: 5% 10% 5% 5%;
     flex: 1;
+    font-size: 2.5rem;
+    background-color: rgba(184, 173, 173, 0.242);
+}
+
+.description > p + p + p {
+    margin-top: 2rem;
 }
 
 .form {
     padding: 3% 0 3% 5%;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px rgba(186, 182, 182, 0.729);
+}
 
+.form > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#registration {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 fieldset {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex: 1;
 }
 
 input {
@@ -102,6 +138,7 @@ input {
 .button-container {
     padding: 3% 0 0 5%;
     flex: 1;
+    background-color: rgba(184, 173, 173, 0.242);
 }
 
 button {
@@ -116,9 +153,15 @@ button {
 }
 
 button:hover {
-    border: solid #fff 2px;
+    background-color: #6d8757;
 }
 
 .button-container > p {
     padding-top: 2%;
+}
+
+.button-container > p > a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
 }
