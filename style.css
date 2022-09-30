@@ -164,6 +164,28 @@ input:focus-visible {
     box-shadow: 3px 3px 3px rgb(113, 130, 128);
 }
 
+span.error {
+    position: relative;
+}
+
+span.error::after {
+    position: absolute;
+    font-size: 0.8rem;
+    content: "* Passwords do not match";
+    color: rgb(200, 20, 20);
+    top: 2rem;
+    right: 9rem;
+    white-space: nowrap;
+}
+
+#pwd.error, #confirm_pwd.error {
+    border: solid 2px rgb(200, 20, 20);
+}
+
+.hide {
+    display: none;
+}
+
 .button-container {
     padding: 3% 0 0 5%;
     flex: 1;
