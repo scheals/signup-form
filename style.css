@@ -110,7 +110,7 @@ footer > p > a {
 }
 
 .form {
-    padding: 3% 0 3% 5%;
+    padding: 1% 0 3% 5%;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -127,8 +127,24 @@ footer > p > a {
     flex-direction: column;
 }
 
+form {
+    color: rgb(45, 52, 59)
+}
+
+label {
+    display: block;
+    letter-spacing: .1rem;
+}
+
 fieldset {
     flex: 1;
+    display: flex;
+    gap: 5rem;
+    border: none;
+}
+
+form > :nth-child(2) {
+    margin: 1rem 0;
 }
 
 input {
